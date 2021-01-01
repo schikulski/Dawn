@@ -28,21 +28,6 @@
     border-top: 0;
 }
 
-.feed-calendar {
-    display: flex;
-    margin-right: 1.5rem;
-    min-width: 45px;
-    color: var(--brand-color);
-    font-size: 1.1rem;
-    font-weight: 800;
-    white-space: nowrap;
-}
-
-.feed-calendar-month {
-    margin-right: 0.4rem;
-    text-transform: uppercase;
-}
-
 .feed-title {
     flex-grow: 1;
     overflow: hidden;
@@ -69,12 +54,6 @@
 
 .feed-visibility-public {
     display: none;
-}
-
-.feed-length {
-    color: var(--secondary-text-color);
-    font-size: 1.4rem;
-    white-space: nowrap;
 }
 
 .feed-icon {
