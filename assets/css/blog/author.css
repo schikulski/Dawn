@@ -37,7 +37,7 @@
 }
 
 .author-list {
-    display: flex;
+    /* display: flex; */
 }
 
 .author-list .author-image-placeholder {
@@ -64,4 +64,8 @@
 
 .author-list .author-image-placeholder:nth-child(5) {
     z-index: 6;
+}
+
+.author-list .author-name {
+    font-size: 1.5rem;
 }

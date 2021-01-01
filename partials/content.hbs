@@ -4,11 +4,11 @@
             <div class="single-meta">
                 <span class="single-meta-item single-meta-date">
                     <time datetime="{{date format="YYYY-MM-DD"}}">
-                        {{date published_at}}
+                        {{date published_at format="DD. MMM YYYY"}}
                     </time>
                 </span>
                 <span class="single-meta-item single-meta-length">
-                    {{reading_time}}
+                    {{reading_time minute="1. min. lesetid" minutes="% min. lesetid"}}
                 </span>
                 {{#primary_tag}}
                     <span class="single-meta-item single-meta-tag">
@@ -75,69 +75,9 @@
     </div>
     {{#is "post"}}
         <footer class="single-footer container medium">
-            <div class="single-footer-left">
-                {{#prev_post}}
-                    <div class="navigation navigation-previous">
-                        <a class="navigation-link" href="{{url}}"
-                            aria-label="Previous post">
-                            <svg class="icon navigation-icon">
-                                <use xlink:href="#arrow-left"></use>
-                            </svg>
-                        </a>
-                    </div>
-                {{/prev_post}}
-            </div>
-            <div class="single-footer-middle">
-                <div class="single-footer-top">
-                    <h3 class="single-footer-title">Published by:</h3>
-                    <div class="author-list">
-                        {{#foreach authors}}
-                            <div
-                                class="author-image-placeholder u-placeholder square">
-                                <a href="{{url}}" title="{{name}}">
-                                    <img class="author-image lazyload u-object-fit"
-                                        data-srcset="{{img_url profile_image size="xs"}}"
-                                        src="{{img_url profile_image size="xs"}}"
-                                        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                        alt="{{name}}">
-                                </a>
-                            </div>
-                        {{/foreach}}
-                    </div>
-                </div>
-                <div class="single-footer-bottom">
-                    <div class="share">
-                        <a class="share-link share-link-facebook"
-                            href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg class="icon icon-facebook">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                            Share
-                        </a>
-                        <a class="share-link share-link-twitter"
-                            href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg class="icon icon-twitter">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                            Tweet
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="single-footer-right">
-                {{#next_post}}
-                    <div class="navigation navigation-next">
-                        <a class="navigation-link" href="{{url}}"
-                            aria-label="Next post">
-                            <svg class="icon navigation-icon">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
-                        </a>
-                    </div>
-                {{/next_post}}
-            </div>
+                {{#foreach authors}}
+                    <div class="author-name">Skrevet av {{name}}</div>
+                {{/foreach}}
         </footer>
     {{/is}}
 </article>
