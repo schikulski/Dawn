@@ -61,16 +61,30 @@
     letter-spacing: -0.02rem;
 }
 
-.single-footer {
-    /* display: flex; */
-    align-items: center;
+
+
+
+.newsletter {
     margin-top: 4.5rem;
-    text-align: center;
 }
 
-.single-footer .author-name {
-    font-size: 1.6rem;
+.newsletter .inner {
+    border-top: 1px solid var(--light-gray-color);
+    padding-top: 4.5rem;
+
 }
+
+.newsletter .inner .button {
+    background: var(--brand-color);
+    color: var(--white-color);
+}
+
+.newsletter .inner .email {
+    margin-bottom: 5px;
+}
+
+
+
 
 
 @media (max-width: 767px) {

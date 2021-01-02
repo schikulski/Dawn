@@ -1,5 +1,19 @@
-{{!-- <footer class="site-footer container">
 
-    <p>simen.digital</p>
 
-</footer> --}}
+<footer class="site-footer container">
+
+
+    {{#is "post"}}
+
+        {{#if @site.logo}}
+            <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
+        {{else}}
+            <span class="logo-text">{{@site.title}}</span>
+        {{/if}}
+
+        <div class="navigation">{{navigation}}</div>
+
+    {{/is}}
+
+
+</footer>
