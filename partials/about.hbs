@@ -2,9 +2,12 @@
     <div class="inner">
 
         <h4>Skrevet av Simen Schikulski</h4>
-        <p>Jeg er en kær som liker å lese og finne ut av ting. Her deler jeg det jeg lærer.</p>
-        <p><a href="#">Les mer om meg her</a> eller <a href="#">følg meg på LinkedIn.</a></p>
-
+        
+        {{#get "pages" slug="om-meg" as |post|}} 
+        {{#post}} 
+        <div class="post-content"> {{content}} </div>
+        {{/post}} 
+        {{/get}}
 
     </div>
 </div>
