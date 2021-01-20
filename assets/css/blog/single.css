@@ -76,7 +76,7 @@
 
 .newsletter .inner .button {
     background: var(--brand-color);
-    color: var(--white-color);
+    color: white;
 }
 
 .newsletter .inner .email {
