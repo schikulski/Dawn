@@ -71,7 +71,16 @@
 .newsletter .inner {
     border-top: 1px solid var(--light-gray-color);
     padding-top: 4.5rem;
+}
 
+article.single .newsletter {
+    background: var(--lighter-gray-color);
+    padding: 4.5rem 0;
+}
+
+article.single .newsletter .inner {
+    border-top: 0;
+    padding-top: 0;
 }
 
 .newsletter .inner .button {
