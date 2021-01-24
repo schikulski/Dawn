@@ -8,3 +8,9 @@
 .site-footer .navigation {
     margin-top: 1.5rem;
 }
+
+.site-footer .emoji-credit {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
